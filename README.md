@@ -1,14 +1,15 @@
 # React CEX Logo
 
-A React component library for displaying cryptocurrency exchange logos.
+A React component library for displaying cryptocurrency exchange logos. This library provides a simple and consistent way to display exchange logos in your React applications.
 
 ## Features
 
 - Easy to use React components
-- TypeScript support
-- Built with Vite
-- Tailwind CSS integration
+- TypeScript support with full type definitions
+- Built with Vite for optimal development experience
+- Tailwind CSS integration for styling
 - Responsive design
+- Lightweight and performant
 
 ## Installation
 
@@ -26,16 +27,66 @@ pnpm add react-cex-logo
 import { CexLogo } from "react-cex-logo";
 
 function App() {
-  return <CexLogo exchange="binance" className="size-8 custom-class" />;
+  return (
+    <div className="flex gap-4">
+      <CexLogo exchange="binance" className="size-8" />
+      <CexLogo exchange="coinbase" className="size-8" />
+      <CexLogo exchange="kraken" className="size-8" />
+    </div>
+  );
 }
 ```
 
+## Supported Exchanges
+
+The following exchanges are currently supported:
+
+- Binance
+- Bitfinex
+- Coinbase
+- Crypto.com
+- Fei
+- Kraken
+- KuCoin
+- OKX
+- Upbit
+
 ## Props
 
-| Prop      | Type   | Default   | Description                                     |
-| --------- | ------ | --------- | ----------------------------------------------- |
-| exchange  | string | required  | The exchange name (e.g., 'binance', 'coinbase') |
-| className | string | undefined | Additional CSS classes                          |
+| Prop      | Type     | Default   | Description                                     |
+| --------- | -------- | --------- | ----------------------------------------------- |
+| exchange  | string   | required  | The exchange name (e.g., 'binance', 'coinbase') |
+| className | string   | undefined | Additional CSS classes                          |
+| ...props  | SVGProps | undefined | Any other SVG props (e.g., color, stroke)       |
+
+## Examples
+
+### Basic Usage
+
+```tsx
+<CexLogo exchange="binance" />
+```
+
+### Custom Size
+
+```tsx
+<CexLogo exchange="coinbase" className="size-8" />
+```
+
+### Custom Styling
+
+```tsx
+<CexLogo
+  exchange="kraken"
+  className="size-8 text-blue-500 hover:text-blue-600 transition-colors"
+/>
+```
+
+### Standalone
+
+```tsx
+<KrakenLogo className="size-6">
+```
 
 ## Development
 
@@ -54,12 +105,25 @@ pnpm test
 
 # Lint code
 pnpm lint
+
+# Type checking
+pnpm typecheck
 ```
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request. Here's how you can contribute:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
-MIT © [Your Name]
+MIT © [seventhlegion](https://github.com/OrcaRevenant)
+
+## Support
+
+If you find this library useful, please consider giving it a ⭐️ on GitHub. For any issues or feature requests, please open an issue on the [GitHub repository](https://github.com/OrcaRevenant/react-cex-logo/issues).

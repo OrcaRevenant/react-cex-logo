@@ -17,7 +17,6 @@ import {
 export interface CexLogoProps extends SVGProps<SVGSVGElement> {
   /** The exchange name */
   exchange: CexName;
-  /** Size of the logo in pixels */
 }
 
 const iconMap = {
@@ -38,7 +37,7 @@ export type CexName = keyof typeof iconMap;
  * A React component for displaying cryptocurrency exchange logos
  * @example
  * ```tsx
- * <CexLogo exchange="binance" size={24} />
+ * <CexLogo exchange="binance" className="size-8" />
  * ```
  */
 export const CexLogo = ({ exchange, ...props }: CexLogoProps) => {
