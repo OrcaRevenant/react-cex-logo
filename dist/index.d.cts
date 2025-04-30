@@ -46,7 +46,7 @@ type CexName = keyof typeof iconMap;
  * A React component for displaying cryptocurrency exchange logos
  * @example
  * ```tsx
- * <CexLogo exchange="binance" size={24} />
+ * <CexLogo exchange="binance" className="size-8" />
  * ```
  */
 declare const CexLogo: ({ exchange, ...props }: CexLogoProps) => react_jsx_runtime.JSX.Element;
