@@ -12,7 +12,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seventhlegion/react-cex-logo.git"
+    "url": "https://github.com/OrcaRevenant/react-cex-logo"
   },
   "keywords": [
     "react",
@@ -24,9 +24,9 @@
   "author": "seventhlegion",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/seventhlegion/react-cex-logo/issues"
+    "url": "https://github.com/OrcaRevenant/react-cex-logo/issues"
   },
-  "homepage": "https://github.com/seventhlegion/react-cex-logo#readme",
+  "homepage": "https://github.com/OrcaRevenant/react-cex-logo/blob/main/README.md",
   "scripts": {
     "dev": "vite",
     "build": "tsup",
