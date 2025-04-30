@@ -82,10 +82,10 @@ The following exchanges are currently supported:
 />
 ```
 
-### Standalone
+### Self
 
 ```tsx
-<KrakenLogo className="size-6">
+<KrakenIcon className="size-6">
 ```
 
 ## Development
