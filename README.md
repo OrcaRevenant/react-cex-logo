@@ -26,7 +26,7 @@ pnpm add react-cex-logo
 import { CexLogo } from "react-cex-logo";
 
 function App() {
-  return <CexLogo exchange="binance" size="md" className="custom-class" />;
+  return <CexLogo exchange="binance" className="size-8 custom-class" />;
 }
 ```
 
@@ -35,7 +35,6 @@ function App() {
 | Prop      | Type   | Default   | Description                                     |
 | --------- | ------ | --------- | ----------------------------------------------- |
 | exchange  | string | required  | The exchange name (e.g., 'binance', 'coinbase') |
-| size      | number | 24        | Size of the logo in pixels                      |
 | className | string | undefined | Additional CSS classes                          |
 
 ## Development
