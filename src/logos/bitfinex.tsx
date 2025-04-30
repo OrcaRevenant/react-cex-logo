@@ -1,7 +1,7 @@
 import { cn } from "../lib/utils";
 import { LogoProps } from "./types";
 
-export function BitfinexIcon({ ...props }: LogoProps) {
+export function BitfinexLogo({ ...props }: LogoProps) {
   return (
     <svg
       className={cn("size-6", props.className)}

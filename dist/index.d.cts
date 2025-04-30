@@ -5,23 +5,23 @@ type LogoProps = {
     size?: number;
 } & SVGProps<SVGSVGElement>;
 
-declare function BinanceIcon({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
+declare function BinanceLogo({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
 
-declare function BitfinexIcon({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
+declare function BitfinexLogo({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
 
-declare function CoinbaseIcon({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
+declare function CoinbaseLogo({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
 
-declare function CryptoComIcon({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
+declare function CryptoComLogo({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
 
-declare function FeiIcon({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
+declare function FeiLogo({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
 
-declare function KrakenIcon({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
+declare function KrakenLogo({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
 
-declare function KuCoinIcon({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
+declare function KuCoinLogo({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
 
-declare function OKXIcon({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
+declare function OKXLogo({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
 
-declare function UpbitIcon({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
+declare function UpbitLogo({ ...props }: LogoProps): react_jsx_runtime.JSX.Element;
 
 /**
  * Props for the CexLogo component
@@ -31,15 +31,15 @@ interface CexLogoProps extends SVGProps<SVGSVGElement> {
     exchange: CexName;
 }
 declare const iconMap: {
-    readonly binance: typeof BinanceIcon;
-    readonly bitfinex: typeof BitfinexIcon;
-    readonly coinbase: typeof CoinbaseIcon;
-    readonly fei: typeof FeiIcon;
-    readonly kucoin: typeof KuCoinIcon;
-    readonly okx: typeof OKXIcon;
-    readonly upbit: typeof UpbitIcon;
-    readonly kraken: typeof KrakenIcon;
-    readonly cryptoCom: typeof CryptoComIcon;
+    readonly binance: typeof BinanceLogo;
+    readonly bitfinex: typeof BitfinexLogo;
+    readonly coinbase: typeof CoinbaseLogo;
+    readonly fei: typeof FeiLogo;
+    readonly kucoin: typeof KuCoinLogo;
+    readonly okx: typeof OKXLogo;
+    readonly upbit: typeof UpbitLogo;
+    readonly kraken: typeof KrakenLogo;
+    readonly cryptoCom: typeof CryptoComLogo;
 };
 type CexName = keyof typeof iconMap;
 /**

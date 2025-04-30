@@ -1,7 +1,7 @@
 import { cn } from "../lib/utils";
 import { LogoProps } from "./types";
 
-export function FeiIcon({ ...props }: LogoProps) {
+export function FeiLogo({ ...props }: LogoProps) {
   return (
     <svg
       className={cn("size-6", props.className)}

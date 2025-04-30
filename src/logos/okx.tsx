@@ -1,7 +1,7 @@
 import { cn } from "../lib/utils";
 import { LogoProps } from "./types";
 
-export function OKXIcon({ ...props }: LogoProps) {
+export function OKXLogo({ ...props }: LogoProps) {
   return (
     <svg
       className={cn("size-6", props.className)}

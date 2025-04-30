@@ -1,14 +1,14 @@
 import { SVGProps } from "react";
 import {
-  BinanceIcon,
-  BitfinexIcon,
-  CoinbaseIcon,
-  CryptoComIcon,
-  FeiIcon,
-  KrakenIcon,
-  KuCoinIcon,
-  OKXIcon,
-  UpbitIcon,
+  BinanceLogo,
+  BitfinexLogo,
+  CoinbaseLogo,
+  CryptoComLogo,
+  FeiLogo,
+  KrakenLogo,
+  KuCoinLogo,
+  OKXLogo,
+  UpbitLogo,
 } from "../logos";
 
 /**
@@ -20,15 +20,15 @@ export interface CexLogoProps extends SVGProps<SVGSVGElement> {
 }
 
 const iconMap = {
-  binance: BinanceIcon,
-  bitfinex: BitfinexIcon,
-  coinbase: CoinbaseIcon,
-  fei: FeiIcon,
-  kucoin: KuCoinIcon,
-  okx: OKXIcon,
-  upbit: UpbitIcon,
-  kraken: KrakenIcon,
-  cryptoCom: CryptoComIcon,
+  binance: BinanceLogo,
+  bitfinex: BitfinexLogo,
+  coinbase: CoinbaseLogo,
+  fei: FeiLogo,
+  kucoin: KuCoinLogo,
+  okx: OKXLogo,
+  upbit: UpbitLogo,
+  kraken: KrakenLogo,
+  cryptoCom: CryptoComLogo,
 } as const;
 
 export type CexName = keyof typeof iconMap;

@@ -1,7 +1,7 @@
 import { cn } from "../lib/utils";
 import { LogoProps } from "./types";
 
-export function KuCoinIcon({ ...props }: LogoProps) {
+export function KuCoinLogo({ ...props }: LogoProps) {
   return (
     <svg
       className={cn("size-6", props.className)}
