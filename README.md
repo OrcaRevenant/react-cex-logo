@@ -85,7 +85,7 @@ The following exchanges are currently supported:
 ### Self
 
 ```tsx
-<KrakenIcon className="size-6">
+<KrakenLogo className="size-6">
 ```
 
 ## Development
