@@ -11,10 +11,14 @@ import {
   UpbitIcon,
 } from "../logos";
 
-export type CexLogoProps = {
-  name: CexName;
-  size?: number;
-} & SVGProps<SVGSVGElement>;
+/**
+ * Props for the CexLogo component
+ */
+export interface CexLogoProps extends SVGProps<SVGSVGElement> {
+  /** The exchange name */
+  exchange: CexName;
+  /** Size of the logo in pixels */
+}
 
 const iconMap = {
   binance: BinanceIcon,
@@ -30,8 +34,15 @@ const iconMap = {
 
 export type CexName = keyof typeof iconMap;
 
-export const CexLogo = ({ name, ...props }: CexLogoProps) => {
-  const Icon = iconMap[name];
+/**
+ * A React component for displaying cryptocurrency exchange logos
+ * @example
+ * ```tsx
+ * <CexLogo exchange="binance" size={24} />
+ * ```
+ */
+export const CexLogo = ({ exchange, ...props }: CexLogoProps) => {
+  const Icon = iconMap[exchange];
 
   return <Icon {...props} />;
 };

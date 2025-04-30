@@ -1,6 +1,6 @@
 {
   "name": "react-cex-logo",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.cjs",
@@ -9,6 +9,24 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seventhlegion/react-cex-logo.git"
+  },
+  "keywords": [
+    "react",
+    "crypto",
+    "exchange",
+    "logo",
+    "icons"
+  ],
+  "author": "seventhlegion",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seventhlegion/react-cex-logo/issues"
+  },
+  "homepage": "https://github.com/seventhlegion/react-cex-logo#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsup",

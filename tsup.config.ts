@@ -6,4 +6,11 @@ export default defineConfig({
   dts: true,
   external: ["react", "react-dom"],
   clean: true,
+  minify: true,
+  sourcemap: true,
+  splitting: false,
+  treeshake: true,
+  platform: "browser",
+  target: "es2020",
+  tsconfig: "tsconfig.build.json",
 });
